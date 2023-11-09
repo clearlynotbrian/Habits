@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "about.css">
-    </head>
-    <body>
-        <p>THIS IS MAIN</p>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="../logo.png">
+        <ul class="header-links">
+            <li>How it works</li>
+            <li>User</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="task-rows">
+        <div class="task-list">
+            <input type = "text" class = "add-task" placeholder = "Add a Habit" onkeydown="addTask(this)"/>
+            <div class="daily-tasks">
+                <div class="daily-task">
+                    <div class="task-check-box">
+                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
+
+                    </div>
+                    <div class="task-description">
+                        <p>Daily Affirmations</p>
+                    </div>
+                </div>
+                <div class="daily-task">
+                    <div class="task-check-box">
+                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
+                    </div>
+                    <div class="task-description">
+                        <p>Brush Teeth</p>
+                    </div>
+                </div>
+                <div class="daily-task">
+                    <div class="task-check-box">
+                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
+
+                    </div>
+                    <div class="task-description">
+                        <p>Leetcode</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="task-list">
+            <textarea class = "add-task" rows = "1" placeholder="Add a Habit">
+            </textarea>
+            <div class="daily-tasks">
+                <div class="daily-task">
+                    <div class="task-check-box">
+                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
+
+                    </div>
+                    <div class="task-description">
+                        <p>Daily Affirmations</p>
+                    </div>
+                </div>
+                <div class="daily-task">
+                    <div class="task-check-box">
+                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
+                    </div>
+                    <div class="task-description">
+                        <p>Brush Teeth</p>
+                    </div>
+                </div>
+                <div class="daily-task">
+                    <div class="task-check-box">
+                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
+
+                    </div>
+                    <div class="task-description">
+                        <p>Leetcode</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script src = "main.js"></script>
+</body>
+
 
 </html>

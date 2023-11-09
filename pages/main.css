@@ -1,0 +1,74 @@
+
+body {
+    background-color: #F5F5DC;
+    color: #333333
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+.navbar .header-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.logo {
+    height: auto;
+    width: 10rem;
+}
+.task-rows {
+    display: flex;
+    flex-direction: row;
+}
+.task-list {
+    border-radius: 0.5rem;
+    background: lightslategray;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 0.5rem;
+    width:50%;
+    height: 20rem;
+
+}
+.daily-tasks {
+    display: flex;
+    flex-direction:column;
+    border-radius: 0.5rem;
+    width: 100%;
+    
+}
+.add-task {
+    border-radius: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0.5rem
+
+}
+.daily-task {
+    display: flex;
+    flex-direction: row;
+    background:lightgray;
+    margin:0.05rem;
+    border-radius:0.5rem;
+}
+.task-check-box {
+    display: flex;
+    padding: 10px;
+    background: orange;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.task-description {
+    display: flex;
+    padding-left: 0.5rem;
+}
