@@ -55,20 +55,43 @@ body {
 }
 .daily-task {
     display: flex;
+    position: relative;
     flex-direction: row;
+    justify-content: space-between;
     background:lightgray;
     margin:0.05rem;
     border-radius:0.5rem;
 }
-.task-check-box {
+.task-check-box, .task-inc {
     display: flex;
-    padding: 10px;
+    align-items: center;
+    padding: 0.5rem;
     background: orange;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
+.task-dec {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: orange;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+.task-increment, .task-decrement {
+    display:flex;
+    justify-content: center;
+    padding: 0.2rem;
+    border-radius: 50%;
+    width:1.5rem;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
 
 .task-description {
     display: flex;
+    width:100%;
     padding-left: 0.5rem;
 }

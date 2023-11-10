@@ -19,67 +19,32 @@
 
     <div class="task-rows">
         <div class="task-list">
-            <input type = "text" class = "add-task" placeholder = "Add a Habit" onkeypress="addTask(this)"/>
-            <div class="daily-tasks" id = "habits">
+            <input type = "text" class = "add-task" placeholder = "Add a Habit" onkeypress="addHabit(this)"/>
+            <div class="daily-tasks" id = "habit">
                 <div class="daily-task">
-                    <div class="task-check-box">
-                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
-
+                    <div class="task-inc">
+                        <button class = "task-increment" type = "button"> + </button>
                     </div>
                     <div class="task-description">
                         <p>Daily Affirmations</p>
                     </div>
-                </div>
-                <div class="daily-task">
-                    <div class="task-check-box">
-                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
-                    </div>
-                    <div class="task-description">
-                        <p>Brush Teeth</p>
-                    </div>
-                </div>
-                <div class="daily-task">
-                    <div class="task-check-box">
-                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
-
-                    </div>
-                    <div class="task-description">
-                        <p>Leetcode</p>
-
+                    <div class="task-dec">
+                        <button class = "task-decrement" type = "button"> - </button>
                     </div>
                 </div>
             </div>
 
         </div>
         <div class="task-list">
-            <textarea class = "add-task" rows = "1" placeholder="Add a Habit">
+            <input type = "text" class = "add-task" placeholder = "Add a Daily Task" onkeypress="addTask(this)"/>
             </textarea>
-            <div class="daily-tasks">
-                <div class="daily-task">
-                    <div class="task-check-box">
-                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
-
-                    </div>
-                    <div class="task-description">
-                        <p>Daily Affirmations</p>
-                    </div>
-                </div>
+            <div class="daily-tasks" id = "daily">
                 <div class="daily-task">
                     <div class="task-check-box">
                         <input type="checkbox" name="myCheckbox" id="myCheckBox">
                     </div>
                     <div class="task-description">
                         <p>Brush Teeth</p>
-                    </div>
-                </div>
-                <div class="daily-task">
-                    <div class="task-check-box">
-                        <input type="checkbox" name="myCheckbox" id="myCheckBox">
-
-                    </div>
-                    <div class="task-description">
-                        <p>Leetcode</p>
-
                     </div>
                 </div>
             </div>
